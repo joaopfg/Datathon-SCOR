@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Please, provide the data below so that we can calculate your biological age and suggest some improvements to you life!{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <label for="weight">Weight</label>
+    <input type="text" name="weight" id="weight" required>
+    <label for="bmi">BMI</label>
+    <input type="text" name="bmi" id="bmi" required>
+    <label for="pulse">Pulse</label>
+    <input type="text" name="pulse" id="pulse" required>
+    <label for="sleep">Sleep hours</label>
+    <input type="text" name="sleep" id="sleep" required>
+    <label for="age">Age</label>
+    <input type="text" name="age" id="age" required>
+    <label for="smoke">Smoke ? (Yes or No)</label>
+    <input type="text" name="smoke" id="smoke" required>
+    <label for="phys_activ">Do physical activities ? (Yes or No)</label>
+    <input type="text" name="phys_activ" id="phys_activ" required>
+    <label for="walk_bic">Walk or ride bicycle frequently ? (Yes or No)</label>
+    <input type="text" name="walk_bic" id="walk_bic" required>
+    <label for="vig_activ">Practice vigorous recreational activities ? (Yes or No)</label>
+    <input type="text" name="vig_activ" id="vig_activ" required>
+    <label for="mod_activ">Practice moderate recreational activities ? (Yes or No)</label>
+    <input type="text" name="mod_activ" id="mod_activ" required>
+    <label for="tv_day">How many hours per day do you watch TV ? </label>
+    <input type="text" name="tv_day" id="tv_day" required>
+    <label for="fat_foods">How many bad meals (fast foods and pizza) do you take per week ? </label>
+    <input type="text" name="fat_foods" id="fat_foods" required>
+    <label for="alcohol_day">How many alcohol drinks you take per day in average ? </label>
+    <input type="text" name="alcohol_day" id="alcohol_day" required>
+    <label for="alcohol_year">How many days of the last year you take alcohol ? </label>
+    <input type="text" name="alcohol_year" id="alcohol_year" required>
+    <input type="submit" value="Get your analysis!">
+  </form>
+{% endblock %}
