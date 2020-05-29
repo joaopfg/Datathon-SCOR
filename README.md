@@ -30,7 +30,17 @@ This script will merge the NHANES data and the mortality data.
 At each part, a .csv file is generated with the corresponding merged dataset. 
 
 ### Missing value imputation
-Missing value imputation was done using multivariate imputation by chained equations method (Stef van Buuren, Karin Groothuis-Oudshoorn, 2011), implemented in R package mice and factor analysis for mixed data (Husson and Josse, 2015), implemented in R package missMDA.
+Missing value imputation was done using multivariate imputation by chained equations method (Stef van Buuren and Karin Groothuis-Oudshoorn, 2011), implemented in R package mice and factor analysis for mixed data (Husson and Josse, 2015), implemented in R package missMDA.
+
+### Model used for predictions
+XGBoost model was used as regression model to predict cholesterol and glycohemoglobin as well as binary classification model to predict mortality and diabetes.
+XGBoost is an optimized distributed gradient boosting library designed to be highly efficient, flexible and portable. It implements machine learning algorithms under the Gradient Boosting framework. XGBoost provides a parallel tree boosting (also known as GBDT, GBM) that solve many data science problems in a fast and accurate way. 
+
+### Model used for survival analysis
+We used Random Survival Forest, Cox Proportional Hazards Model and LTRC trees for survival analysis. 
+
+### Results interpretation
+SHAP values were used to analyze the results, which interpret the impact of having a certain value for a given feature in comparison to the prediction we'd make if that feature took some baseline value.
 
 ### About the app code
 The app has python backend (using Flask framework) and HTML/CSS frontend (using Jinja templates).
