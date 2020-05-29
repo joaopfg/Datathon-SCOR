@@ -44,7 +44,7 @@ SHAP values were used to analyze the results, which interpret the impact of havi
 
 ### About the app code
 The app has python backend (using Flask framework) and HTML/CSS frontend (using Jinja templates).
-The backend calls the compressed machine learning models via python's pickle module and a SQL database is used to store user data and transfer it to the other views in the app.
+The backend calls the compressed machine learning models via python's pickle module and a SQL database is used to store user data and transfer it to different views in the app.
 
 ### Creating an environment
 Create a project folder and a venv folder within:
