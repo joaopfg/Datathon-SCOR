@@ -29,6 +29,37 @@ Finally, run the script 3_Merge_Member_Mortality.R:
 This script will merge the NHANES data and the mortality data.
 At each part, a .csv file is generated with the corresponding merged dataset. 
 
+### Create an environment
+Create a project folder and a venv folder within:
+
+```mkdir myproject
+cd myproject
+python3 -m venv venv
+```
+
+On Windows:
+
+```py -3 -m venv venv```
+
+If you needed to install virtualenv because you are using Python 2, use the following command instead:
+
+```python2 -m virtualenv venv```
+
+On Windows:
+
+```\Python27\Scripts\virtualenv.exe venv```
+
+### Activate the environment
+Before you run the app, activate the corresponding environment:
+
+```. venv/bin/activate```
+
+On Windows:
+
+```venv\Scripts\activate```
+
+Your shell prompt will change to show the name of the activated environment.
+
 ### Running the app
 
 You can run the application using the flask command. From the terminal, tell Flask where to find the application, then run it in development mode. Remember, you should still be in the top-level directory, not the flaskr package.
