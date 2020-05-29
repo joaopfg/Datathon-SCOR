@@ -29,6 +29,10 @@ Finally, run the script 3_Merge_Member_Mortality.R:
 This script will merge the NHANES data and the mortality data.
 At each part, a .csv file is generated with the corresponding merged dataset. 
 
+### About the app code
+The app has python backend (using Flask framework) and HTML/CSS frontend (using Jinja templates).
+The backend calls the compressed machine learning models via python's pickle module and a SQL database is used to store user data and transfer it to the other views in the app.
+
 ### Create an environment
 Create a project folder and a venv folder within:
 
