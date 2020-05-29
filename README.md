@@ -1,7 +1,7 @@
 # Datathon-SCOR
 Web app and data treatment for datathon organized by SCOR
 
-### How to use the script get_data.py to get all the data from NHANES website
+### Using the script get_data.py to get all the data from NHANES website
 It's necessary to have the following python libraries installed on your machine: os, re and BeautifulSoup. If you don't have some of them you can install it through pip.
 Then just run it as a common python program:
 ```
@@ -9,7 +9,7 @@ python3 get_data.py
 ```
 It will automatically create adequate folders and install the corresponding files in each folder.
 
-### How to merge the data using the R scripts which are inside the "Merging" folder
+### Merging the data using the R scripts which are inside the "Merging" folder
 You need to create a "Member Data" inside the "Merging folder" with the NHANES data you want to use for your analyses. The format of the files and folders inside it are given as example for a particular subset of NHANES dataset.
 The installation of the needed libraries are commented in the code. If you don't have some of them installed on your machine, just uncomment the corresponding part.
 Firstly, run the script 1_Mortality_Data.R:
@@ -33,7 +33,7 @@ At each part, a .csv file is generated with the corresponding merged dataset.
 The app has python backend (using Flask framework) and HTML/CSS frontend (using Jinja templates).
 The backend calls the compressed machine learning models via python's pickle module and a SQL database is used to store user data and transfer it to the other views in the app.
 
-### Create an environment
+### Creating an environment
 Create a project folder and a venv folder within:
 
 ```mkdir myproject
@@ -53,7 +53,7 @@ On Windows:
 
 ```\Python27\Scripts\virtualenv.exe venv```
 
-### Activate the environment
+### Activating the environment
 Before you run the app, activate the corresponding environment:
 
 ```. venv/bin/activate```
